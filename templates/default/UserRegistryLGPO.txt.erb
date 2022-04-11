@@ -1,0 +1,14 @@
+; ----------------------------------------------------------------------
+; PARSING User POLICY
+; Source file:  .\Registry.pol
+
+<% @policies.each do |policy| %>
+User
+<%= policy[:key] %>
+<%= policy[:name] %>
+<%= policy[:type] -%>:<%= policy[:value] %>
+
+<% end %>
+
+; PARSING COMPLETED.
+; ----------------------------------------------------------------------
