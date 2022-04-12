@@ -41,25 +41,25 @@ end
 
 # Password Policy
 
-dsc_module 'SecurityPolicyDSC' do
-  dsc_resource 'MSFT_AccountPolicy'
-  action :import
-end
+# dsc_module 'SecurityPolicyDSC' do
+#   dsc_resource 'MSFT_AccountPolicy'
+#   action :import
+# end
 
-pass_policy_hash = [{ option: 'Enforce_password_history', value: 24 },
-    { option: 'Maximum_Password_Age', value: 30 },
-    { option: 'Minimum_Password_Age', value: 1 },
-    { option: 'Minimum_Password_Length', value: 14 },
-    { option: 'Password_must_meet_complexity_requirements', value: 'Enabled' },
-    { option: 'Store_passwords_using_reversible_encryption', value: 'Disabled' },
-   ]
+# pass_policy_hash = [{ option: 'Enforce_password_history', value: 24 },
+#     { option: 'Maximum_Password_Age', value: 30 },
+#     { option: 'Minimum_Password_Age', value: 1 },
+#     { option: 'Minimum_Password_Length', value: 14 },
+#     { option: 'Password_must_meet_complexity_requirements', value: 'Enabled' },
+#     { option: 'Store_passwords_using_reversible_encryption', value: 'Disabled' },
+#    ]
 
-pass_policy_hash.each do |pol|
-  dsc_password_policy pol[:option] do
-    passopt pol[:option]
-    passvalue pol[:value]
-  end
-end
+# pass_policy_hash.each do |pol|
+#   dsc_password_policy pol[:option] do
+#     passopt pol[:option]
+#     passvalue pol[:value]
+#   end
+# end
 
 # Accounts: Administrator account status
 

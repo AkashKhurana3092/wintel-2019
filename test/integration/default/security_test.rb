@@ -799,53 +799,53 @@ control 'Security_100' do
   end
 end
 
-# Password Policy: Enforce password history
+# # Password Policy: Enforce password history
 
-control 'Security_101' do
-  describe security_policy do
-    its('PasswordHistorySize') { should be >= 24 }
-  end
-end
+# control 'Security_101' do
+#   describe security_policy do
+#     its('PasswordHistorySize') { should be >= 24 }
+#   end
+# end
 
-# Password Policy: Maximum password age
+# # Password Policy: Maximum password age
 
-control 'Security_102' do
-  describe security_policy do
-    its('MaximumPasswordAge') { should be <= 30 }
-  end
-  describe security_policy do
-    its('MaximumPasswordAge') { should be > 0 }
-  end
-end
+# control 'Security_102' do
+#   describe security_policy do
+#     its('MaximumPasswordAge') { should be <= 30 }
+#   end
+#   describe security_policy do
+#     its('MaximumPasswordAge') { should be > 0 }
+#   end
+# end
 
-# Password Policy: Minimum password age
+# # Password Policy: Minimum password age
 
-control 'Security_103' do
-  describe security_policy do
-    its('MinimumPasswordAge') { should be >= 1 }
-  end
-end
+# control 'Security_103' do
+#   describe security_policy do
+#     its('MinimumPasswordAge') { should be >= 1 }
+#   end
+# end
 
-# Password Policy: Minimum password length
+# # Password Policy: Minimum password length
 
-control 'Security_104' do
-  describe security_policy do
-    its('MinimumPasswordLength') { should be >= 14 }
-  end
-end
+# control 'Security_104' do
+#   describe security_policy do
+#     its('MinimumPasswordLength') { should be >= 14 }
+#   end
+# end
 
-# Password Policy: Password must meet complexity requirements
+# # Password Policy: Password must meet complexity requirements
 
-control 'Security_105' do
-  describe security_policy do
-    its('PasswordComplexity') { should eq 1 }
-  end
-end
+# control 'Security_105' do
+#   describe security_policy do
+#     its('PasswordComplexity') { should eq 1 }
+#   end
+# end
 
-# Password Policy: Store passwords using reversible encryption
+# # Password Policy: Store passwords using reversible encryption
 
-control 'Security_106' do
-  describe security_policy do
-    its('ClearTextPassword') { should eq 0 }
-  end
-end
+# control 'Security_106' do
+#   describe security_policy do
+#     its('ClearTextPassword') { should eq 0 }
+#   end
+# end
