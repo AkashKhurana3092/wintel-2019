@@ -3251,7 +3251,7 @@ end
 
 control 'Computer_153' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3259,7 +3259,7 @@ end
 
 control 'Computer_154' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3267,7 +3267,7 @@ end
 
 control 'Computer_155' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3275,7 +3275,7 @@ end
 
 control 'Computer_156' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3283,7 +3283,7 @@ end
 
 control 'Computer_157' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3291,7 +3291,7 @@ end
 
 control 'Computer_158' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3299,7 +3299,7 @@ end
 
 control 'Computer_159' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
@@ -3307,7 +3307,7 @@ end
 
 control 'Computer_160' do
   describe registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS' do
-    its('Reserved') { should eq "1" }
+    its('Reserved') { should eq '1' }
   end
 end
 
