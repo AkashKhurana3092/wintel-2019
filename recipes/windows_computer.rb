@@ -408,7 +408,7 @@ end
 
 # Prevent Internet Explorer security prompt for Windows Installer scripts
 registry_key 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer' do
-  values [{ name: 'UILockdown', type: :dword, data: '0' }]
+  values [{ name: 'SafeForScripting', type: :dword, data: '0' }]
   action :create
   recursive true
 end
